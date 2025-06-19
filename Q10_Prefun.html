@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Elements Using splice()</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #fff0f5; border: 1px solid #cc6699; }
+  </style>
+</head>
+<body>
+
+  <h2>Remove 2 Elements from Index 1 Using <code>.splice()</code></h2>
+
+  <div class="output" id="original"></div>
+  <div class="output" id="removed"></div>
+  <div class="output" id="modified"></div>
+
+  <script>
+    let numbers = [1, 2, 3, 4, 5];
+
+    // Display original array
+    document.getElementById("original").innerHTML = "<strong>Original Array:</strong> " + numbers.join(", ");
+
+    // Remove 2 elements from index 1
+    let removed = numbers.splice(1, 2); // Removes 2 and 3
+
+    // Display removed elements
+    document.getElementById("removed").innerHTML = "<strong>Removed Elements:</strong> " + removed.join(", ");
+
+    // Display modified array
+    document.getElementById("modified").innerHTML = "<strong>Modified Array:</strong> " + numbers.join(", ");
+  </script>
+
+</body>
+</html>

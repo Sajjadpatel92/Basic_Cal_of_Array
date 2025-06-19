@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Combine Two Arrays</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #f7f7f7; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h2>Combine Two Arrays Using <code>.concat()</code></h2>
+
+  <div class="output" id="array1"></div>
+  <div class="output" id="array2"></div>
+  <div class="output" id="combined"></div>
+
+  <script>
+    // Function to combine arrays
+    function combineArrays(arr1, arr2) {
+      return arr1.concat(arr2);  // Built-in method
+    }
+
+    // Example arrays
+    let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+
+    // Combine them
+    let result = combineArrays(array1, array2);
+
+    // Display output
+    document.getElementById("array1").innerHTML = "<strong>Array 1:</strong> " + array1.join(", ");
+    document.getElementById("array2").innerHTML = "<strong>Array 2:</strong> " + array2.join(", ");
+    document.getElementById("combined").innerHTML = "<strong>Combined:</strong> " + result.join(", ");
+  </script>
+
+</body>
+</html>

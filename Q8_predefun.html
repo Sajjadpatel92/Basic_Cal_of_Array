@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Value in Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #fff5cc; border: 1px solid #e6c200; }
+  </style>
+</head>
+<body>
+
+  <h2>Check if Value Exists in Array</h2>
+
+  <div class="output" id="array"></div>
+  <div class="output" id="result"></div>
+
+  <script>
+    let numbers = [5, 10, 15, 20];
+
+    function checkValue(arr, value) {
+      return arr.includes(value); // built-in method
+    }
+
+    // Call function to check if 10 exists
+    let exists = checkValue(numbers, 10);
+
+    // Display array and result
+    document.getElementById("array").innerHTML = "<strong>Array:</strong> " + numbers.join(", ");
+    document.getElementById("result").innerHTML = "<strong>Does 10 exist?</strong> " + (exists ? "Yes ✅" : "No ❌");
+  </script>
+
+</body>
+</html>

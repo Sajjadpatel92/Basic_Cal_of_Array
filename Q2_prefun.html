@@ -1,0 +1,38 @@
+//2.Given an array let fruits = ["apple", "banana", "orange"], write a statement that removes the last element using a predefined method.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Last Element from Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin-top: 10px; padding: 10px; 
+        background: #f0f0f0; 
+        border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h2>Remove Last Item from Array using .pop()</h2>
+
+  <div class="output" id="before"></div>
+  <div class="output" id="removed"></div>
+  <div class="output" id="after"></div>
+
+  <script>
+    let fruits = ["apple", "banana", "orange"];
+
+    // Display before removal
+    document.getElementById("before").innerHTML = "<strong>Before:</strong> " + fruits.join(", ");
+
+    // Remove last element
+    let removedItem = fruits.pop(); // Removes "orange"
+
+    // Display removed item
+    document.getElementById("removed").innerHTML = "<strong>Removed Item:</strong> " + removedItem;
+
+    // Display after removal
+    document.getElementById("after").innerHTML = "<strong>After:</strong> " + fruits.join(", ");
+  </script>
+
+</body>
+</html>

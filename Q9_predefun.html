@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extract Array Elements</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #e6f7ff; border: 1px solid #3399cc; }
+  </style>
+</head>
+<body>
+
+  <h2>Extract Elements from Index 1 to 3 (Excluding Index 4)</h2>
+
+  <div class="output" id="original"></div>
+  <div class="output" id="extracted"></div>
+
+  <script>
+    let letters = ["a", "b", "c", "d", "e"];
+
+    // Extract elements from index 1 to 3
+    let result = letters.slice(1, 4); // "b", "c", "d"
+
+    // Display original and extracted array
+    document.getElementById("original").innerHTML = "<strong>Original Array:</strong> " + letters.join(", ");
+    document.getElementById("extracted").innerHTML = "<strong>Extracted (index 1 to 3):</strong> " + result.join(", ");
+  </script>
+
+</body>
+</html>

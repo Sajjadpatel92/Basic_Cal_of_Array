@@ -1,0 +1,43 @@
+//Write a JavaScript function that adds a new element "apple" to the end of an array using a predefined method.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Apple to Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin-top: 
+    10px; padding: 10px;
+     background: #e50101; 
+     border: 1px solid #ccc; }
+     .outafter{
+         background: #d6c912; 
+     }
+  </style>
+</head>
+<body>
+
+  <h2>JavaScript Array Update Example</h2>
+
+  <div class="output" id="beforeOutput"></div>
+  <div class="outafter" id="afterOutput"></div>
+
+  <script>
+    function addApple(arr) {
+      arr.push("apple"); // Add 'apple' at the end
+      return arr;
+    }
+
+    let fruits = ["banana", "mango", "orange"];
+
+    // Display before
+    document.getElementById("beforeOutput").innerHTML = "<strong>Before:</strong> " + fruits.join(", ");
+
+    // Call function
+    let updatedFruits = addApple(fruits);
+
+    // Display after
+    document.getElementById("afterOutput").innerHTML = "<strong>After:</strong> " + updatedFruits.join(", ");
+  </script>
+
+</body>
+</html>

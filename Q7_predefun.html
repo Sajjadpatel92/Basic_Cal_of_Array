@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Double Numbers in Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #eef7ff; border: 1px solid #3399ff; }
+  </style>
+</head>
+<body>
+
+  <h2>Double Each Number in the Array</h2>
+
+  <div class="output" id="original"></div>
+  <div class="output" id="doubled"></div>
+
+  <script>
+    let numbers = [2, 4, 6];
+
+    // Use map() to double each number
+    let doubledNumbers = numbers.map(function(num) {
+      return num * 2;
+    });
+
+    // Display arrays
+    document.getElementById("original").innerHTML = "<strong>Original Array:</strong> " + numbers.join(", ");
+    document.getElementById("doubled").innerHTML = "<strong>Doubled Array:</strong> " + doubledNumbers.join(", ");
+  </script>
+
+</body>
+</html>

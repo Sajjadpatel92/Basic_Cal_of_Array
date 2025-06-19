@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove First Element from Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #eef; border: 1px solid #99c; }
+  </style>
+</head>
+<body>
+
+  <h2>Remove First Element Using <code>.shift()</code></h2>
+
+  <div class="output" id="before"></div>
+  <div class="output" id="removed"></div>
+  <div class="output" id="after"></div>
+
+  <script>
+    let items = [10, 20, 30, 40];
+
+    // Display before
+    document.getElementById("before").innerHTML = "<strong>Before:</strong> " + items.join(", ");
+
+    // Remove first element
+    let removedItem = items.shift(); // removes 10
+
+    // Display removed item
+    document.getElementById("removed").innerHTML = "<strong>Removed Element:</strong> " + removedItem;
+
+    // Display after
+    document.getElementById("after").innerHTML = "<strong>After:</strong> " + items.join(", ");
+  </script>
+
+</body>
+</html>

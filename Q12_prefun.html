@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sum of Array</title>
+  <style>
+    div {
+      border: 4px solid blueviolet;
+      background-color: antiquewhite;
+      color: blueviolet;
+      padding: 20px;
+      margin: 50px auto;
+      width: 350px;
+      text-align: center;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Sum of Array Elements</h2>
+    <h3 id="output"></h3>
+  </div>
+
+  <script>
+    let arr = [3, 7, 5, 2];
+    let sum = arr.reduce(function(total, current) {
+      return total + current;
+    });
+
+    document.getElementById("output").innerHTML = "Array: [" + arr + "]<br>Sum = " + sum;
+  </script>
+</body>
+</html>

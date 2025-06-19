@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add to Beginning of Array</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { margin: 10px 0; padding: 10px; background: #f2f2f2; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h2>Add "grape" to the Beginning of the Array</h2>
+
+  <div class="output" id="before"></div>
+  <div class="output" id="after"></div>
+
+  <script>
+    let fruits = ["apple", "banana"];
+
+    // Display before adding
+    document.getElementById("before").innerHTML = "<strong>Before:</strong> " + fruits.join(", ");
+
+    // Add "grape" at the beginning
+    fruits.unshift("grape");
+
+    // Display after adding
+    document.getElementById("after").innerHTML = "<strong>After:</strong> " + fruits.join(", ");
+  </script>
+
+</body>
+</html>
